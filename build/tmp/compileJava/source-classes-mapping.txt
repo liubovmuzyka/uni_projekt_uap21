@@ -1,2 +1,4 @@
-Main.java
- Main
+de/unitrier/st/uap/w21/tram/Main.java
+ de.unitrier.st.uap.w21.tram.Main
+de/unitrier/st/uap/w21/tram/Instruction.java
+ de.unitrier.st.uap.w21.tram.Instruction
