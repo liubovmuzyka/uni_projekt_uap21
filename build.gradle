@@ -3,7 +3,6 @@ plugins {
 }
 
 group 'uni.projekt.uap'
-version '1.0-SNAPSHOT'
 
 sourceCompatibility = 1.8
 
@@ -12,20 +11,20 @@ repositories {
 }
 
 dependencies {
+    compile files('libs')
     testImplementation 'org.junit.jupiter:junit-jupiter-api:5.6.0'
     testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine'
+    implementation 'log4j:log4j:1.2.17'
+    //implementation group: 'log4j', name: 'log4j', version: '1.2.17'
 }
 
+//create a single Jar
 jar {
     manifest {
         attributes "Main-Class": "de.unitrier.st.uap.w21.tram.Main"
     }
-
+    baseName = project.name
     from {
         configurations.compile.collect { it.isDirectory() ? it : zipTree(it) }
     }
-}
-
-test {
-    useJUnitPlatform()
 }
