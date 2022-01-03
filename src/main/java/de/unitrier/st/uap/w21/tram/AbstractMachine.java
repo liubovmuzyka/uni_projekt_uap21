@@ -4,35 +4,38 @@ import org.apache.log4j.Logger;
 import org.apache.log4j.PropertyConfigurator;
 
 import java.util.ArrayList;
+import java.util.Scanner;
 
 
 public class AbstractMachine {
 
     static Logger logger = Logger.getLogger(AbstractMachine.class);
 
-    public boolean verbose = true;
+    public boolean verbose = false;
 
     final Instruction[] i;
     int pc = 0, pp = 0, fp = 0, top = -1;
     ArrayList<Integer> stack = new ArrayList<>();
 
-
     public AbstractMachine(Instruction[] i) {
         this.i = i;
         PropertyConfigurator.configure("src/log4j.properties");
 
-        // adoption for examples 1 and 2
-        if (top == 1) {
-            stack.add(0);
-            stack.add(0);
-        }
-        if (top == 0) {
-            stack.add(0);
-        }
+        // optional for examples 1 and 2
+//        if (top == 1) {
+//            stack.add(0);
+//            stack.add(0);
+//        }
+//        if (top == 0) {
+//            stack.add(0);
+//        }
+    }
+
+    public void setVerbose(boolean verbose) {
+        this.verbose = verbose;
     }
 
     public String interpret() {
-
         while (pc >= 0) {
             switch (i[pc].getOpcode()) {
                 case Instruction.CONST:
@@ -101,7 +104,10 @@ public class AbstractMachine {
                     break;
             }
         }
-        return "Result: " + stack.get(top);
+        if (verbose){
+            System.out.println("All computing steps are written into a file");
+        }
+        return "result:"+stack.get(top);
     }
 
     private void conzt(int p1) {
@@ -184,16 +190,17 @@ public class AbstractMachine {
 
     public void printout(String op) {
         if (verbose) {
-            String[] stackStrings = new String[stack.size()];
+            String[] stackStrings = new String[top+1]; //optional output with full stack new String[stack.size()]
             for (int i = 0; i < stackStrings.length; i++) {
                 if (i <= top) {
-                    stackStrings[i] = stack.get(i).toString();
-                } else {
+                   stackStrings[i] = stack.get(i).toString();
+               }
+                //optional output with full stack
+/*                else {
                     stackStrings[i] = "(" + stack.get(i).toString() + ")";
-                }
+                }*/
             }
             logger.info("top=" + top + ", " + "pc=" + pc + ", " + "pp=" + pp + ", " + "fp=" + fp + ", [" + String.join(", ", stackStrings) + "]" + (op == null ? "" : (" // " + op)));
-            // LOGGER.info("top=" + top + ", " + "pc=" + pc + ", " + "pp=" + pp + ", " + "fp=" + fp + ", [" + String.join(", ", stackStrings) + "]" + (op == null ? "" : (" // " + op)));
         }
     }
 

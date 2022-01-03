@@ -9,28 +9,37 @@
       <change beforePath="$PROJECT_DIR$/.gradle/6.7/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.7/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.7/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.7/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.7/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.7/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.7/fileHashes/resourceHashesCache.bin" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.7/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.7/javaCompile/classAnalysis.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.7/javaCompile/jarAnalysis.bin" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.7/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.7/javaCompile/javaCompile.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.7/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.7/javaCompile/taskHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.9.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.9.1/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.9.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.9.1/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.9.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.9.1/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.9.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.9.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.9.1/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.9.1/javaCompile/classAnalysis.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.9.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.9.1/javaCompile/javaCompile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.9.1/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.9.1/javaCompile/taskHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/cache.properties" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/cache.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/checksums/checksums.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/checksums/md5-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/checksums/md5-checksums.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/checksums/sha1-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/checksums/sha1-checksums.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/main/de/unitrier/st/uap/w21/tram/AbstractMachine.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/de/unitrier/st/uap/w21/tram/AbstractMachine.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/de/unitrier/st/uap/w21/tram/Instruction.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/de/unitrier/st/uap/w21/tram/Instruction.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/main/de/unitrier/st/uap/w21/tram/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/de/unitrier/st/uap/w21/tram/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/libs/uni_projekt_uap21-1.0-SNAPSHOT.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/libs/uni_projekt_uap21.jar" beforeDir="false" afterPath="$PROJECT_DIR$/build/libs/uni_projekt_uap21.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/source-classes-mapping.txt" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/compileJava/source-classes-mapping.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug-modus.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ggt.tram" beforeDir="false" afterPath="$PROJECT_DIR$/ggt.tram" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/log4j-1.2.17.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/log4j.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/log4j.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/de/unitrier/st/uap/w21/tram/AbstractMachine.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/unitrier/st/uap/w21/tram/AbstractMachine.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/de/unitrier/st/uap/w21/tram/Instruction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/unitrier/st/uap/w21/tram/Instruction.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/de/unitrier/st/uap/w21/tram/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/unitrier/st/uap/w21/tram/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -109,31 +118,19 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="JAVA" />
-    <property name="last_opened_file_path" value="$USER_HOME$/Developer/log4j-1.2.17.jar" />
+    <property name="external.system.task.project.file.to.start" value="$PROJECT_DIR$/triplac" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/lib/java-cup-11a.jar" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.project.gradle" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Liubov\GitHub\uni_projekt_uap21\src\main\java" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Main">
-    <configuration name="Main " type="Application" factoryName="Application">
-      <option name="MAIN_CLASS_NAME" value="de.unitrier.st.uap.w21.tram.Main" />
-      <module name="uni_projekt_uap21" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="de.unitrier.st.uap.w21.tram.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Gradle.C:/Users/Liubov/GitHub/uni_projekt_uap21/triplac [jar]">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="de.unitrier.st.uap.w21.tram.Main" />
       <module name="uni_projekt_uap21.main" />
@@ -148,18 +145,26 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
+    <configuration name="C:/Users/Liubov/GitHub/uni_projekt_uap21/triplac [jar]" type="GradleRunConfiguration" factoryName="Gradle" nameIsGenerated="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/triplac" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="jar" />
+          </list>
+        </option>
+        <option name="vmOptions" value="" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
     </configuration>
     <configuration name="uni_projekt_uap21 [jar]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
@@ -204,8 +209,8 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Application.Main " />
       <item itemvalue="Application.Main" />
+      <item itemvalue="Gradle.C:/Users/Liubov/GitHub/uni_projekt_uap21/triplac [jar]" />
       <item itemvalue="Gradle.uni_projekt_uap21" />
       <item itemvalue="Gradle.uni_projekt_uap21 [jar]" />
     </list>
@@ -230,7 +235,23 @@
       <workItem from="1636415189079" duration="501000" />
       <workItem from="1636415698010" duration="258000" />
       <workItem from="1636415964015" duration="466000" />
-      <workItem from="1636416438176" duration="5313000" />
+      <workItem from="1636416438176" duration="5911000" />
+      <workItem from="1636479669417" duration="6116000" />
+      <workItem from="1636493266152" duration="1049000" />
+      <workItem from="1636581775363" duration="2289000" />
+      <workItem from="1637416073591" duration="228000" />
+      <workItem from="1637426339529" duration="1999000" />
+      <workItem from="1638014227862" duration="6495000" />
+      <workItem from="1638128662156" duration="4253000" />
+      <workItem from="1638302936055" duration="3431000" />
+      <workItem from="1638385154100" duration="4244000" />
+      <workItem from="1638476615795" duration="22074000" />
+      <workItem from="1639659319241" duration="71000" />
+      <workItem from="1639659397884" duration="3872000" />
+      <workItem from="1640959929958" duration="721000" />
+      <workItem from="1641152883011" duration="2232000" />
+      <workItem from="1641224373986" duration="3171000" />
+      <workItem from="1641240616526" duration="1513000" />
     </task>
     <servers />
   </component>
@@ -248,5 +269,16 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/de/unitrier/st/uap/w21/tram/AbstractMachine.java</url>
+          <line>39</line>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

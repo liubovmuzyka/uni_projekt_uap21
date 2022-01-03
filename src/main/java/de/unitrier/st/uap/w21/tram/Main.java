@@ -1,9 +1,12 @@
 
 package de.unitrier.st.uap.w21.tram;
 
+import org.apache.commons.cli.*;
+
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Iterator;
 import java.util.Scanner;
 
@@ -13,12 +16,17 @@ final class Main {
     }
 
     public static void main(String[] argv) {
-        // TODO: Create an instance of the abstract machine with respective parameters
-        //System.out.println(new AbstractMachine(Instruction.program1).interpret());
 
         ArrayList<String> stack = new ArrayList<>();
-        String dateiname = argv[0];
+        String dateiname;
+        if (argv[0].equals("-d") || argv[0].equals("-debug")){
+            dateiname = argv[1];
+        }else {
+            dateiname = argv[0];
+        }
+
         Scanner scan = null;
+        //reading .tram-file and filling ArrayList with all Instructions
         try {
             scan = new Scanner(new File(dateiname));
         } catch (FileNotFoundException e) {
@@ -26,19 +34,21 @@ final class Main {
         }
         while (scan.hasNext()) {
             String line = scan.nextLine();
-            String linesplit = line.split(":")[1];
-            stack.add(linesplit);
+            stack.add(line);
         }
         scan.close();
-        ArrayList<Instruction> instructions = new ArrayList<>();
-        Iterator<String> iter = stack.iterator();
-        while (iter.hasNext()) {
 
+        ArrayList<Instruction> instructions = new ArrayList<>();
+
+        Iterator<String> iter = stack.iterator();
+
+        while (iter.hasNext()) {
             String iterstr = iter.next();
+            //getting opcode
             String opcode = iterstr.split("[\\\\(||\\\\)]")[0];
+            //getting parameters
             String parameters;
             String pr1 = null, pr2 = null, pr3 = null;
-
             try {
                 if (iterstr.indexOf("(")!=-1) {
                     parameters = iterstr.split("[\\(||\\)]")[1];
@@ -165,6 +175,8 @@ final class Main {
                     break;
             }
         }
+
+
         Instruction[] instructionsArray = new Instruction[instructions.size()];
         int i = 0;
         Iterator<Instruction> instructionIterator = instructions.iterator();
@@ -173,7 +185,30 @@ final class Main {
             i++;
         }
 
+
+        File f = new File("debug-modus.log");
+        if(f.exists() && !f.isDirectory()) {
+            f.delete();
+        }
+
         AbstractMachine abstractMachine = new AbstractMachine(instructionsArray);
+
+        Options options = new Options();
+        Option debugOption = new Option("d", "debug", false, "Activate debug-modus");
+        options.addOption(debugOption);
+
+        CommandLine cmd;
+        CommandLineParser parser = new BasicParser();
+
+        try {
+            cmd = parser.parse(options, argv);
+            if(cmd.hasOption("d")) {
+                abstractMachine.setVerbose(true);
+            }
+        } catch (ParseException e) {
+            System.out.println(e.getMessage());
+        }
+
         System.out.println(abstractMachine.interpret());
     }
 }

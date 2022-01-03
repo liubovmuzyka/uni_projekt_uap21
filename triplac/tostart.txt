@@ -1,0 +1,3 @@
+1.) gradle jar
+2.) java -jar build/libs/triplac.jar myprogram.tripla
+3.) dot -Tpng result.dot > example.png
