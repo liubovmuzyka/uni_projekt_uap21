@@ -21,13 +21,23 @@ dependencies {
     }
 }
 
-jar {
+task lexer(type: Exec) {
+    commandLine 'cmd', '/c', 'java -jar lib/jflex-1.6.1.jar src/de/unitrier/st/uap/tripla.flex'
+}
+
+task parser(type: Exec, dependsOn: lexer) {
+    commandLine 'cmd', '/c', 'java -jar lib/java-cup-11a.jar -destdir src/de/unitrier/st/uap/ src/de/unitrier/st/uap/tripla.cup'
+}
+
+
+task customFatJar(type: Jar, dependsOn: parser) {
     duplicatesStrategy = DuplicatesStrategy.EXCLUDE
     manifest {
-        attributes "Main-Class": "de.unitrier.st.uap.Main"
+        attributes 'Main-Class': 'de.unitrier.st.uap.Main'
     }
-    from {
-        configurations.runtimeClasspath.collect {it.isDirectory() ? it : zipTree(it)
-        }
-    }
+    baseName = 'triplac'
+    from { configurations.runtimeClasspath.collect {it.isDirectory() ? it : zipTree(it)
+        } }
+    with jar
 }
+
