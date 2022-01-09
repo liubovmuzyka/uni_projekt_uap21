@@ -30,7 +30,7 @@ task parser(type: Exec, dependsOn: lexer) {
 }
 
 task png(type: Exec) {
-    commandLine 'cmd', '/c', 'dot -Tpng result.dot > example.png'
+    commandLine 'cmd', '/c', 'dot -Tpng resultast.dot > ast.png'
 }
 
 

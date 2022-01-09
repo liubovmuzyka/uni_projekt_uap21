@@ -41,6 +41,9 @@ public class AbstractMachine {
                 case Instruction.CONST:
                     conzt(i[pc].getArg1());
                     break;
+                case Instruction.CONSTNULL:
+                    conztnull();
+                    break;
                 case Instruction.LOAD:
                     if (i[pc].getArg2() == null) {
                         load(i[pc].getArg1());
@@ -72,8 +75,14 @@ public class AbstractMachine {
                 case Instruction.LT:
                     lt();
                     break;
+                case Instruction.LOE:
+                    loe();
+                    break;
                 case Instruction.GT:
                     gt();
+                    break;
+                case Instruction.GOE:
+                    goe();
                     break;
                 case Instruction.EQ:
                     eq();
@@ -115,6 +124,11 @@ public class AbstractMachine {
         top++;
         pc++;
         printout("conzt");
+    }
+
+    private void conztnull() {
+        pc++;
+        printout("conztnull");
     }
 
     private void load(int p1) {
@@ -222,6 +236,17 @@ public class AbstractMachine {
         printout("lt");
     }
 
+    private void loe() {
+        if (stack.get(top - 1) <= stack.get(top)) {
+            stack.set(top - 1, 1);
+        } else {
+            stack.set(top - 1, 0);
+        }
+        top--;
+        pc++;
+        printout("loe");
+    }
+
     private void gt() {
         if (stack.get(top - 1) > stack.get(top)) {
             stack.set(top - 1, 1);
@@ -231,6 +256,17 @@ public class AbstractMachine {
         top--;
         pc++;
         printout("gt");
+    }
+
+    private void goe() {
+        if (stack.get(top - 1) >= stack.get(top)) {
+            stack.set(top - 1, 1);
+        } else {
+            stack.set(top - 1, 0);
+        }
+        top--;
+        pc++;
+        printout("goe");
     }
 
     private void eq() {

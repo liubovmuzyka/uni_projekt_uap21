@@ -19,9 +19,9 @@ final class Main {
 
         ArrayList<String> stack = new ArrayList<>();
         String dateiname;
-        if (argv[0].equals("-d") || argv[0].equals("-debug")){
+        if (argv[0].equals("-d") || argv[0].equals("-debug")) {
             dateiname = argv[1];
-        }else {
+        } else {
             dateiname = argv[0];
         }
 
@@ -45,19 +45,14 @@ final class Main {
         while (iter.hasNext()) {
             String iterstr = iter.next();
             //getting opcode
-            String opcode = iterstr.split("[\\\\(||\\\\)]")[0];
+            String opcode = iterstr.split("\\s+")[0];
             //getting parameters
             String parameters;
             String pr1 = null, pr2 = null, pr3 = null;
             try {
-                if (iterstr.indexOf("(")!=-1) {
-                    parameters = iterstr.split("[\\(||\\)]")[1];
-                    String[] prs = parameters.split(",");
-
-                    pr1 = prs.length >= 1 ? prs[0] : null;
-                    pr2 = prs.length >= 2 ? prs[1] : null;
-                    pr3 = prs.length >= 3 ? prs[2] : null;
-               }
+                pr1 = iterstr.split("\\s+")[1].length() >= 1 ? iterstr.split("\\s+")[1] : null;
+                pr2 = iterstr.split("\\s+")[2].length() >= 1 ? iterstr.split("\\s+")[2] : null;
+                pr3 = iterstr.split("\\s+")[3].length() >= 1 ? iterstr.split("\\s+")[3] : null;
 
             } catch (ArrayIndexOutOfBoundsException e) {
                 e.printStackTrace();
@@ -65,109 +60,127 @@ final class Main {
 
             Instruction instruction = null;
             switch (opcode) {
-                case "const":
+                case "CONST":
                     instruction = new Instruction(Instruction.CONST, pr1 != null ? Integer.parseInt(pr1) : null,
                             pr2 != null ? Integer.parseInt(pr2) : null,
                             pr3 != null ? Integer.parseInt(pr3) : null);
                     instructions.add(instruction);
                     break;
-                case "load":
+                case "CONST NULL":
+                    instruction = new Instruction(Instruction.CONSTNULL, pr1 != null ? Integer.parseInt(pr1) : null,
+                            pr2 != null ? Integer.parseInt(pr2) : null,
+                            pr3 != null ? Integer.parseInt(pr3) : null);
+                    instructions.add(instruction);
+                    break;
+                case "LOAD":
                     instruction = new Instruction(Instruction.LOAD, pr1 != null ? Integer.parseInt(pr1) : null,
                             pr2 != null ? Integer.parseInt(pr2) : null,
                             pr3 != null ? Integer.parseInt(pr3) : null);
                     instructions.add(instruction);
                     break;
-                case "store":
+                case "STORE":
                     instruction = new Instruction(Instruction.STORE, pr1 != null ? Integer.parseInt(pr1) : null,
                             pr2 != null ? Integer.parseInt(pr2) : null,
                             pr3 != null ? Integer.parseInt(pr3) : null);
                     instructions.add(instruction);
                     break;
-                case "add":
+                case "ADD":
                     instruction = new Instruction(Instruction.ADD, pr1 != null ? Integer.parseInt(pr1) : null,
                             pr2 != null ? Integer.parseInt(pr2) : null,
                             pr3 != null ? Integer.parseInt(pr3) : null);
                     instructions.add(instruction);
                     break;
-                case "sub":
+                case "SUB":
                     instruction = new Instruction(Instruction.SUB, pr1 != null ? Integer.parseInt(pr1) : null,
                             pr2 != null ? Integer.parseInt(pr2) : null,
                             pr3 != null ? Integer.parseInt(pr3) : null);
                     instructions.add(instruction);
                     break;
-                case "mul":
+                case "MUL":
                     instruction = new Instruction(Instruction.MUL, pr1 != null ? Integer.parseInt(pr1) : null,
                             pr2 != null ? Integer.parseInt(pr2) : null,
                             pr3 != null ? Integer.parseInt(pr3) : null);
                     instructions.add(instruction);
                     break;
-                case "div":
+                case "DIV":
                     instruction = new Instruction(Instruction.DIV, pr1 != null ? Integer.parseInt(pr1) : null,
                             pr2 != null ? Integer.parseInt(pr2) : null,
                             pr3 != null ? Integer.parseInt(pr3) : null);
                     instructions.add(instruction);
                     break;
-                case "lt":
+                case "LT":
                     instruction = new Instruction(Instruction.LT, pr1 != null ? Integer.parseInt(pr1) : null,
                             pr2 != null ? Integer.parseInt(pr2) : null,
                             pr3 != null ? Integer.parseInt(pr3) : null);
                     instructions.add(instruction);
                     break;
-                case "gt":
+                case "LOE":
+                    instruction = new Instruction(Instruction.LOE, pr1 != null ? Integer.parseInt(pr1) : null,
+                            pr2 != null ? Integer.parseInt(pr2) : null,
+                            pr3 != null ? Integer.parseInt(pr3) : null);
+                    instructions.add(instruction);
+                    break;
+                case "GT":
                     instruction = new Instruction(Instruction.GT, pr1 != null ? Integer.parseInt(pr1) : null,
                             pr2 != null ? Integer.parseInt(pr2) : null,
                             pr3 != null ? Integer.parseInt(pr3) : null);
                     instructions.add(instruction);
                     break;
-                case "eq":
+                case "GOE":
+                    instruction = new Instruction(Instruction.GOE, pr1 != null ? Integer.parseInt(pr1) : null,
+                            pr2 != null ? Integer.parseInt(pr2) : null,
+                            pr3 != null ? Integer.parseInt(pr3) : null);
+                    instructions.add(instruction);
+                    break;
+                case "EQ":
                     instruction = new Instruction(Instruction.EQ, pr1 != null ? Integer.parseInt(pr1) : null,
                             pr2 != null ? Integer.parseInt(pr2) : null,
                             pr3 != null ? Integer.parseInt(pr3) : null);
                     instructions.add(instruction);
                     break;
-                case "neq":
+                case "NEQ":
                     instruction = new Instruction(Instruction.NEQ, pr1 != null ? Integer.parseInt(pr1) : null,
                             pr2 != null ? Integer.parseInt(pr2) : null,
                             pr3 != null ? Integer.parseInt(pr3) : null);
                     instructions.add(instruction);
                     break;
-                case "ifzero":
+                case "IFZERO":
                     instruction = new Instruction(Instruction.IFZERO, pr1 != null ? Integer.parseInt(pr1) : null,
                             pr2 != null ? Integer.parseInt(pr2) : null,
                             pr3 != null ? Integer.parseInt(pr3) : null);
                     instructions.add(instruction);
                     break;
-                case "goto":
+                case "GOTO":
                     instruction = new Instruction(Instruction.GOTO, pr1 != null ? Integer.parseInt(pr1) : null,
                             pr2 != null ? Integer.parseInt(pr2) : null,
                             pr3 != null ? Integer.parseInt(pr3) : null);
                     instructions.add(instruction);
                     break;
-                case "halt":
+                case "HALT":
                     instruction = new Instruction(Instruction.HALT, pr1 != null ? Integer.parseInt(pr1) : null,
                             pr2 != null ? Integer.parseInt(pr2) : null,
                             pr3 != null ? Integer.parseInt(pr3) : null);
                     instructions.add(instruction);
                     break;
-                case "nop":
+                case "NOP":
                     instruction = new Instruction(Instruction.NOP, pr1 != null ? Integer.parseInt(pr1) : null,
                             pr2 != null ? Integer.parseInt(pr2) : null,
                             pr3 != null ? Integer.parseInt(pr3) : null);
                     instructions.add(instruction);
                     break;
-                case "invoke":
+                case "INVOKE":
                     instruction = new Instruction(Instruction.INVOKE, pr1 != null ? Integer.parseInt(pr1) : null,
                             pr2 != null ? Integer.parseInt(pr2) : null,
                             pr3 != null ? Integer.parseInt(pr3) : null);
                     instructions.add(instruction);
                     break;
-                case "return":
+                case "RETURN":
                     instruction = new Instruction(Instruction.RETURN, pr1 != null ? Integer.parseInt(pr1) : null,
                             pr2 != null ? Integer.parseInt(pr2) : null,
                             pr3 != null ? Integer.parseInt(pr3) : null);
                     instructions.add(instruction);
                     break;
-                case "pop":
+                case "POP":
                     instruction = new Instruction(Instruction.POP, pr1 != null ? Integer.parseInt(pr1) : null,
                             pr2 != null ? Integer.parseInt(pr2) : null,
                             pr3 != null ? Integer.parseInt(pr3) : null);
@@ -182,12 +195,12 @@ final class Main {
         Iterator<Instruction> instructionIterator = instructions.iterator();
         while (instructionIterator.hasNext()) {
             instructionsArray[i] = instructionIterator.next();
+            System.out.println(instructionsArray[i].toString());
             i++;
         }
 
-
         File f = new File("debug-modus.log");
-        if(f.exists() && !f.isDirectory()) {
+        if (f.exists() && !f.isDirectory()) {
             f.delete();
         }
 
@@ -202,7 +215,7 @@ final class Main {
 
         try {
             cmd = parser.parse(options, argv);
-            if(cmd.hasOption("d")) {
+            if (cmd.hasOption("d")) {
                 abstractMachine.setVerbose(true);
             }
         } catch (ParseException e) {

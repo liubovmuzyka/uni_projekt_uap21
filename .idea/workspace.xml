@@ -12,102 +12,38 @@
       <change beforePath="$PROJECT_DIR$/.gradle/6.7/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.7/javaCompile/classAnalysis.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.7/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.7/javaCompile/javaCompile.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/checksums/checksums.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/checksums/md5-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/checksums/md5-checksums.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/checksums/sha1-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/checksums/sha1-checksums.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/de/unitrier/st/uap/w21/tram/AbstractMachine.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/de/unitrier/st/uap/w21/tram/AbstractMachine.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/de/unitrier/st/uap/w21/tram/Instruction.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/de/unitrier/st/uap/w21/tram/Instruction.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/de/unitrier/st/uap/w21/tram/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/de/unitrier/st/uap/w21/tram/Main.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/source-classes-mapping.txt" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/compileJava/source-classes-mapping.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ggt.tram" beforeDir="false" afterPath="$PROJECT_DIR$/ggt.tram" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/settings.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug-modus.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ggt.tram" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/unitrier/st/uap/w21/tram/AbstractMachine.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/unitrier/st/uap/w21/tram/AbstractMachine.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/de/unitrier/st/uap/w21/tram/Instruction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/unitrier/st/uap/w21/tram/Instruction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tripla-programs/argsParamsExample-ast.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tripla-programs/argsParamsExample.tripla" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tripla-programs/complex.tripla" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tripla-programs/condition.tripla" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tripla-programs/defSemiExample.tripla" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tripla-programs/factorial.tripla" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tripla-programs/faulty-multiple-let.tripla" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tripla-programs/faulty_if.tripla" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tripla-programs/func.tripla" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tripla-programs/ggT_euclid_iter.tripla" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tripla-programs/ggT_euclid_rec.tripla" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tripla-programs/invalidProgram.tripla" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tripla-programs/multiple-let-with-same-func-name.tripla" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tripla-programs/multiple-let.tripla" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tripla-programs/p1.tripla" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tripla-programs/p2.tripla" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tripla-programs/p3.tripla" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tripla-programs/p4.tripla" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tripla-programs/p5.tripla" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tripla-programs/p6.tripla" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tripla-programs/side_effect.tripla" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tripla-programs/simple_dfa.tripla" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tripla-programs/simple_if.tripla" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tripla-programs/simple_if_2.tripla" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tripla-programs/simple_if_3.tripla" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tripla-programs/simple_if_4.tripla" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tripla-programs/simple_if_5.tripla" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tripla-programs/simple_if_6.tripla" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tripla-programs/simple_if_7.tripla" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tripla-programs/square.tripla" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tripla-programs/validProgram.tripla" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tripla-programs/while.tripla" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tripla-programs/while_2.tripla" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tripla-programs/wrapped-ggT.tripla" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tripla-programs/wrapper.tripla" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tripla/tripla.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/triplac/.gradle/6.9.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/triplac/.gradle/6.9.1/executionHistory/executionHistory.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/triplac/.gradle/6.9.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/triplac/.gradle/6.9.1/executionHistory/executionHistory.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/triplac/.gradle/6.9.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/triplac/.gradle/6.9.1/fileHashes/fileHashes.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/triplac/.gradle/6.9.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/triplac/.gradle/6.9.1/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/triplac/.gradle/6.9.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/triplac/.gradle/6.9.1/javaCompile/javaCompile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/unitrier/st/uap/w21/tram/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/unitrier/st/uap/w21/tram/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/triplac/.gradle/7.2/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/triplac/.gradle/7.2/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/triplac/.gradle/7.2/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/triplac/.gradle/7.2/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/triplac/.gradle/7.2/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/triplac/.gradle/7.2/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/triplac/.gradle/7.2/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/triplac/.gradle/7.2/fileHashes/fileHashes.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/triplac/.gradle/7.2/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/triplac/.gradle/7.2/fileHashes/resourceHashesCache.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/triplac/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/triplac/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/triplac/.gradle/buildOutputCleanup/cache.properties" beforeDir="false" afterPath="$PROJECT_DIR$/triplac/.gradle/buildOutputCleanup/cache.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/triplac/.gradle/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/triplac/.gradle/checksums/checksums.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/triplac/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/triplac/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/triplac/build/classes/java/main/de/unitrier/st/uap/CUP$parser$actions.class" beforeDir="false" afterPath="$PROJECT_DIR$/triplac/build/classes/java/main/de/unitrier/st/uap/CUP$parser$actions.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/triplac/build/classes/java/main/de/unitrier/st/uap/Instruction.class" beforeDir="false" afterPath="$PROJECT_DIR$/triplac/build/classes/java/main/de/unitrier/st/uap/Instruction.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/triplac/build/classes/java/main/de/unitrier/st/uap/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/triplac/build/classes/java/main/de/unitrier/st/uap/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/triplac/build/classes/java/main/de/unitrier/st/uap/nodes/BinNode.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/triplac/build/classes/java/main/de/unitrier/st/uap/nodes/CallNode.class" beforeDir="false" afterPath="$PROJECT_DIR$/triplac/build/classes/java/main/de/unitrier/st/uap/nodes/CallNode.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/triplac/build/classes/java/main/de/unitrier/st/uap/nodes/CommaNode.class" beforeDir="false" afterPath="$PROJECT_DIR$/triplac/build/classes/java/main/de/unitrier/st/uap/nodes/CommaNode.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/triplac/build/classes/java/main/de/unitrier/st/uap/nodes/ConstNode.class" beforeDir="false" afterPath="$PROJECT_DIR$/triplac/build/classes/java/main/de/unitrier/st/uap/nodes/ConstNode.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/triplac/build/classes/java/main/de/unitrier/st/uap/nodes/DefDefNode.class" beforeDir="false" afterPath="$PROJECT_DIR$/triplac/build/classes/java/main/de/unitrier/st/uap/nodes/DefDefNode.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/triplac/build/classes/java/main/de/unitrier/st/uap/nodes/DefinitionNode.class" beforeDir="false" afterPath="$PROJECT_DIR$/triplac/build/classes/java/main/de/unitrier/st/uap/nodes/DefinitionNode.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/triplac/build/classes/java/main/de/unitrier/st/uap/nodes/IdentifierNode.class" beforeDir="false" afterPath="$PROJECT_DIR$/triplac/build/classes/java/main/de/unitrier/st/uap/nodes/IdentifierNode.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/triplac/build/classes/java/main/de/unitrier/st/uap/nodes/IfNode.class" beforeDir="false" afterPath="$PROJECT_DIR$/triplac/build/classes/java/main/de/unitrier/st/uap/nodes/IfNode.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/triplac/build/classes/java/main/de/unitrier/st/uap/nodes/InBrNode.class" beforeDir="false" afterPath="$PROJECT_DIR$/triplac/build/classes/java/main/de/unitrier/st/uap/nodes/InBrNode.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/triplac/build/classes/java/main/de/unitrier/st/uap/nodes/LetNode.class" beforeDir="false" afterPath="$PROJECT_DIR$/triplac/build/classes/java/main/de/unitrier/st/uap/nodes/LetNode.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/triplac/build/classes/java/main/de/unitrier/st/uap/nodes/Node.class" beforeDir="false" afterPath="$PROJECT_DIR$/triplac/build/classes/java/main/de/unitrier/st/uap/nodes/Node.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/triplac/build/classes/java/main/de/unitrier/st/uap/nodes/OpNode.class" beforeDir="false" afterPath="$PROJECT_DIR$/triplac/build/classes/java/main/de/unitrier/st/uap/nodes/OpNode.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/triplac/build/classes/java/main/de/unitrier/st/uap/nodes/SemiNode.class" beforeDir="false" afterPath="$PROJECT_DIR$/triplac/build/classes/java/main/de/unitrier/st/uap/nodes/SemiNode.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/triplac/build/classes/java/main/de/unitrier/st/uap/nodes/SetNode.class" beforeDir="false" afterPath="$PROJECT_DIR$/triplac/build/classes/java/main/de/unitrier/st/uap/nodes/SetNode.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/triplac/build/classes/java/main/de/unitrier/st/uap/nodes/WhileNode.class" beforeDir="false" afterPath="$PROJECT_DIR$/triplac/build/classes/java/main/de/unitrier/st/uap/nodes/WhileNode.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/triplac/build/libs/triplac.jar" beforeDir="false" afterPath="$PROJECT_DIR$/triplac/build/libs/triplac.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/triplac/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/triplac/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/triplac/example.png" beforeDir="false" afterPath="$PROJECT_DIR$/triplac/example.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/triplac/result.dot" beforeDir="false" afterPath="$PROJECT_DIR$/triplac/result.dot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/triplac/src/de/unitrier/st/uap/Instruction.java" beforeDir="false" afterPath="$PROJECT_DIR$/triplac/src/de/unitrier/st/uap/Instruction.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/triplac/src/de/unitrier/st/uap/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/triplac/src/de/unitrier/st/uap/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/triplac/src/de/unitrier/st/uap/nodes/BinNode.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/triplac/src/de/unitrier/st/uap/nodes/CallNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/triplac/src/de/unitrier/st/uap/nodes/CallNode.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/triplac/src/de/unitrier/st/uap/nodes/CommaNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/triplac/src/de/unitrier/st/uap/nodes/CommaNode.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/triplac/src/de/unitrier/st/uap/nodes/ConstNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/triplac/src/de/unitrier/st/uap/nodes/ConstNode.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/triplac/src/de/unitrier/st/uap/nodes/DefDefNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/triplac/src/de/unitrier/st/uap/nodes/DefDefNode.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/triplac/src/de/unitrier/st/uap/nodes/DefinitionNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/triplac/src/de/unitrier/st/uap/nodes/DefinitionNode.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/triplac/src/de/unitrier/st/uap/nodes/IdentifierNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/triplac/src/de/unitrier/st/uap/nodes/IdentifierNode.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/triplac/src/de/unitrier/st/uap/nodes/IfNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/triplac/src/de/unitrier/st/uap/nodes/IfNode.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/triplac/src/de/unitrier/st/uap/nodes/InBrNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/triplac/src/de/unitrier/st/uap/nodes/InBrNode.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/triplac/src/de/unitrier/st/uap/nodes/LetNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/triplac/src/de/unitrier/st/uap/nodes/LetNode.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/triplac/src/de/unitrier/st/uap/nodes/Node.java" beforeDir="false" afterPath="$PROJECT_DIR$/triplac/src/de/unitrier/st/uap/nodes/Node.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/triplac/src/de/unitrier/st/uap/nodes/OpNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/triplac/src/de/unitrier/st/uap/nodes/OpNode.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/triplac/src/de/unitrier/st/uap/nodes/SemiNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/triplac/src/de/unitrier/st/uap/nodes/SemiNode.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/triplac/src/de/unitrier/st/uap/nodes/SetNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/triplac/src/de/unitrier/st/uap/nodes/SetNode.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/triplac/src/de/unitrier/st/uap/nodes/WhileNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/triplac/src/de/unitrier/st/uap/nodes/WhileNode.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/triplac/src/de/unitrier/st/uap/parser.java" beforeDir="false" afterPath="$PROJECT_DIR$/triplac/src/de/unitrier/st/uap/parser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/triplac/src/de/unitrier/st/uap/sym.java" beforeDir="false" afterPath="$PROJECT_DIR$/triplac/src/de/unitrier/st/uap/sym.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/triplac/src/de/unitrier/st/uap/tripla.cup" beforeDir="false" afterPath="$PROJECT_DIR$/triplac/src/de/unitrier/st/uap/tripla.cup" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/triplac/while-ast.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/triplac/while.tram" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/triplac/while.tripla" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -207,11 +143,11 @@
       <recent name="de.unitrier.st.uap" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.triplac">
+  <component name="RunManager" selected="Application.MainTRAM">
     <configuration name="MainTRAM" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="de.unitrier.st.uap.w21.tram.Main" />
       <module name="uni_projekt_uap21.main" />
-      <option name="PROGRAM_PARAMETERS" value="ggt.tram" />
+      <option name="PROGRAM_PARAMETERS" value="coderesult.tram" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="de.unitrier.st.uap.w21.tram.*" />
@@ -225,7 +161,7 @@
     <configuration name="triplac" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="de.unitrier.st.uap.Main" />
       <module name="triplac.main" />
-      <option name="PROGRAM_PARAMETERS" value="triplac\while.tripla" />
+      <option name="PROGRAM_PARAMETERS" value="triplac\tripla-programs\simple_if.tripla" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -394,7 +330,7 @@
       <workItem from="1641593171987" duration="19866000" />
       <workItem from="1641745249713" duration="310000" />
       <workItem from="1641745568291" duration="4905000" />
-      <workItem from="1641753632433" duration="10441000" />
+      <workItem from="1641753632433" duration="17263000" />
     </task>
     <servers />
   </component>

@@ -43,10 +43,11 @@ public class OpNode extends Node {
                 code.add(new CodeLine(Instruction.LOE));
                 break;
             case "&&":
-                code.add(new CodeLine(Instruction.AND));
+                code.add(new CodeLine(Instruction.MUL));
                 break;
             case "||":
-                code.add(new CodeLine(Instruction.OR));
+                code.add(new CodeLine(Instruction.ADD));
+                //TODO
                 break;
             case "+":
                 code.add(new CodeLine(Instruction.ADD));
@@ -62,7 +63,6 @@ public class OpNode extends Node {
                 break;
 
         }
-
         return code;
     }
 }

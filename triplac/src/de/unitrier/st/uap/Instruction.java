@@ -4,6 +4,7 @@
 
 package de.unitrier.st.uap;
 
+
 public class Instruction {
     private int opcode;
     private Integer arg1;
@@ -30,9 +31,7 @@ public class Instruction {
     public final static int POP = 18;
     public final static int GOE = 19;
     public final static int LOE = 20;
-    public final static int AND = 21;
-    public final static int OR = 22;
-
+    public final static int CONSTNULL = 21;
 
     public Instruction(int opcode, Integer arg1, Integer arg2, Integer arg3) {
         this(opcode, arg1, arg2);
@@ -105,6 +104,9 @@ public class Instruction {
             case Instruction.CONST:
                 retStr += "CONST";
                 break;
+            case Instruction.CONSTNULL:
+                retStr += "CONSTNULL";
+                break;
             case Instruction.LOAD:
                 retStr += "LOAD";
                 break;
@@ -141,12 +143,6 @@ public class Instruction {
             case Instruction.NEQ:
                 retStr += "NEQ";
                 break;
-            case Instruction.AND:
-                retStr += "AND";
-                break;
-            case Instruction.OR:
-                retStr += "OR";
-                break;
             case Instruction.IFZERO:
                 retStr += "IFZERO";
                 break;
@@ -172,8 +168,8 @@ public class Instruction {
                 retStr += "ERROR";
         }
 
-        if (arg1 != null || opcode == CONST) {
-            retStr += (" " + arg1).toUpperCase();
+        if (arg1 != null) {
+            retStr += " " + arg1;
 
             if (arg2 != null) {
                 retStr += " " + arg2;

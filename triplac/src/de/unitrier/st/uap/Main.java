@@ -32,35 +32,20 @@ final class Main
             parser triplaParser = new parser(new Lexer(new FileReader(fileName)));
             ast = ((Node) (triplaParser.parse().value));
 
-//            List<CodeLine> code = ast.code(new AddressRoom());
-//            code.add(new CodeLine(Instruction.HALT));
-//            String program = code.stream().map(e -> e.toInstruction(code).toString()).collect(Collectors.joining(System.getProperty("line.separator")));
-//            System.out.println("========================");
-//            try {
-//                System.out.println(program);
-//            } catch(Exception e) {
-//                e.printStackTrace();
-//                System.exit(1);
-//            }
-//            System.out.println("========================");
             List<CodeLine> code = ast.code(new AddressRoom());
             code.add(new CodeLine(Instruction.HALT));
-            String program = code.stream().map(e -> e.toReadableInstruction(code)).collect(Collectors.joining(System.getProperty("line.separator")));
-
+            String program = code.stream().map(e -> e.toInstruction(code).toString()).collect(Collectors.joining(System.getProperty("line.separator")));
             try {
-                FileWriter myWriter = new FileWriter("triplac/while.tram");
+                FileWriter myWriter = new FileWriter("coderesult.tram");
                 myWriter.write(program);
                 myWriter.close();
-                System.out.println("Successfully wrote to the file.");
             } catch (IOException e) {
-                System.out.println("An error occurred.");
                 e.printStackTrace();
             }
-
-
+            String programconsole = code.stream().map(e -> e.toReadableInstruction(code)).collect(Collectors.joining(System.getProperty("line.separator")));
             System.out.println("========================");
             try {
-                System.out.println(program);
+                System.out.println(programconsole);
             } catch(Exception e) {
                 e.printStackTrace();
                 System.exit(1);
@@ -93,7 +78,7 @@ final class Main
 
     public static void createDot(Node root) {
         try {
-            try (BufferedWriter writer = new BufferedWriter(new FileWriter("C:\\Users\\Liubov\\GitHub\\uni_projekt_uap21\\triplac\\result.dot", false))) {
+            try (BufferedWriter writer = new BufferedWriter(new FileWriter("C:\\Users\\Liubov\\GitHub\\uni_projekt_uap21\\triplac\\resultast.dot", false))) {
                 writer.append("strict digraph graphname\n{");
                 visit1(root, writer);
                 visit2(root, "", writer);
