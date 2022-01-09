@@ -1,12 +1,15 @@
 package de.unitrier.st.uap;
 
 import de.unitrier.st.uap.nodes.Node;
+import de.unitrier.st.uap.tramgeneration.AddressRoom;
+import de.unitrier.st.uap.tramgeneration.CodeLine;
 
 import java.io.*;
 import java.util.ArrayList;
+import java.util.List;
+import java.util.stream.Collectors;
 
-import static java.lang.System.err;
-import static java.lang.System.out;
+import static java.lang.System.*;
 
 final class Main
 {
@@ -28,6 +31,43 @@ final class Main
 			String fileName = args[0];
             parser triplaParser = new parser(new Lexer(new FileReader(fileName)));
             ast = ((Node) (triplaParser.parse().value));
+
+//            List<CodeLine> code = ast.code(new AddressRoom());
+//            code.add(new CodeLine(Instruction.HALT));
+//            String program = code.stream().map(e -> e.toInstruction(code).toString()).collect(Collectors.joining(System.getProperty("line.separator")));
+//            System.out.println("========================");
+//            try {
+//                System.out.println(program);
+//            } catch(Exception e) {
+//                e.printStackTrace();
+//                System.exit(1);
+//            }
+//            System.out.println("========================");
+            List<CodeLine> code = ast.code(new AddressRoom());
+            code.add(new CodeLine(Instruction.HALT));
+            String program = code.stream().map(e -> e.toReadableInstruction(code)).collect(Collectors.joining(System.getProperty("line.separator")));
+
+            try {
+                FileWriter myWriter = new FileWriter("triplac/while.tram");
+                myWriter.write(program);
+                myWriter.close();
+                System.out.println("Successfully wrote to the file.");
+            } catch (IOException e) {
+                System.out.println("An error occurred.");
+                e.printStackTrace();
+            }
+
+
+            System.out.println("========================");
+            try {
+                System.out.println(program);
+            } catch(Exception e) {
+                e.printStackTrace();
+                System.exit(1);
+            }
+            System.out.println("========================");
+
+            SyntaxTreeSimplifier.simplify(ast);
             createDot(ast);
 
 			fileName = fileName.substring(fileName.lastIndexOf("/") + 1, fileName.lastIndexOf("."));
@@ -53,7 +93,7 @@ final class Main
 
     public static void createDot(Node root) {
         try {
-            try (BufferedWriter writer = new BufferedWriter(new FileWriter("result.dot", true))) {
+            try (BufferedWriter writer = new BufferedWriter(new FileWriter("C:\\Users\\Liubov\\GitHub\\uni_projekt_uap21\\triplac\\result.dot", false))) {
                 writer.append("strict digraph graphname\n{");
                 visit1(root, writer);
                 visit2(root, "", writer);

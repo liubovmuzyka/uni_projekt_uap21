@@ -1,5 +1,5 @@
 const(4)
-const(3)
+const(12)
 load(0)
 ifzero(22)
 load(1)

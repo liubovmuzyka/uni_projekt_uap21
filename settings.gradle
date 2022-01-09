@@ -1,2 +1,3 @@
 rootProject.name = 'uni_projekt_uap21'
+include 'tram'
 

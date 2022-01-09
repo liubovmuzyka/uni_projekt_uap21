@@ -1,8 +1,15 @@
 package de.unitrier.st.uap.nodes;
 
-import java.util.LinkedList;
+import com.sun.tools.javac.util.Pair;
+import de.unitrier.st.uap.*;
+import de.unitrier.st.uap.tramgeneration.AddressRoom;
+import de.unitrier.st.uap.tramgeneration.CodeLine;
 
-public class Node
+import java.util.LinkedList;
+import java.util.List;
+import java.util.Map;
+
+public abstract class Node
 {
     private String type;
     private Object attribute;
@@ -35,6 +42,10 @@ public class Node
     public LinkedList<Node> getChildren()
     {
         return this.children;
+    }
+
+    public Node child(int i) {
+        return getChildren().get(i);
     }
 
     public void setType(String type)
@@ -92,4 +103,6 @@ public class Node
         str.append(endTag());
         return str.toString();
     }
+
+    public abstract List<CodeLine> code(AddressRoom addressRoom);
 }

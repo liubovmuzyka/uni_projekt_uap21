@@ -4,6 +4,7 @@
 
 package de.unitrier.st.uap.w21.tram;
 
+
 public class Instruction {
     private int opcode;
     private Integer arg1;
@@ -28,6 +29,10 @@ public class Instruction {
     public final static int INVOKE = 16;
     public final static int RETURN = 17;
     public final static int POP = 18;
+    public final static int GOE = 19;
+    public final static int LOE = 20;
+    public final static int AND = 21;
+    public final static int OR = 22;
 
 
     public Instruction(int opcode, Integer arg1, Integer arg2, Integer arg3) {
@@ -125,11 +130,23 @@ public class Instruction {
             case Instruction.GT:
                 retStr += "GT";
                 break;
+            case Instruction.GOE:
+                retStr += "GOE";
+                break;
+            case Instruction.LOE:
+                retStr += "LOE";
+                break;
             case Instruction.EQ:
                 retStr += "EQ";
                 break;
             case Instruction.NEQ:
                 retStr += "NEQ";
+                break;
+            case Instruction.AND:
+                retStr += "AND";
+                break;
+            case Instruction.OR:
+                retStr += "OR";
                 break;
             case Instruction.IFZERO:
                 retStr += "IFZERO";

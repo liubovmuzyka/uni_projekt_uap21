@@ -84,14 +84,15 @@ E ::= LET D IN E
     | E AOP E
     | STARTBR E ENDBR
     | CONST
-    | BIN
+    | TRUE
+    | FALSE
     | ID EQ E
     | E SEMI E
     | IF EXP THEN E ELSE E
     | WHILE EXP DO STARTCB E ENDCB
     ;
 
-EXP::= BIN
+EXP::=
     | STARTBR EXP ENDBR
     | E RELOP E
     | EXP LOP EXP
@@ -115,7 +116,6 @@ start with E;
 
 E ::= LET D:d IN E:e
     {:
-        System.out.println("Let");
         Node node = new LetNode();
         node.addChild(d);
         node.addChild(e);
@@ -123,13 +123,11 @@ E ::= LET D:d IN E:e
     :}
     | ID:id
     {:
-        System.out.println("ID");
         Node node = new IdentifierNode(id);
         RESULT = node;
     :}
     | ID:id STARTBR A:a ENDBR
     {:
-        System.out.println("CALL");
         Node node = new CallNode();
         node.addChild(new IdentifierNode(id));
         node.addChild(a);
@@ -137,7 +135,6 @@ E ::= LET D:d IN E:e
     :}
     | E:e1 PLUS E:e2
     {:
-    System.out.println("PLUS");
         Node node = new OpNode("+");
         node.addChild(e1);
         node.addChild(e2);
@@ -145,7 +142,6 @@ E ::= LET D:d IN E:e
     :}
     | E:e1 MIN E:e2
     {:
-    System.out.println("MIN");
         Node node = new OpNode("-");
         node.addChild(e1);
         node.addChild(e2);
@@ -153,7 +149,6 @@ E ::= LET D:d IN E:e
     :}
     | E:e1 DIV E:e2
     {:
-    System.out.println("DIV");
         Node node = new OpNode("/");
         node.addChild(e1);
         node.addChild(e2);
@@ -161,7 +156,6 @@ E ::= LET D:d IN E:e
     :}
     | E:e1 MULT E:e2
     {:
-    System.out.println("MUL");
         Node node = new OpNode("*");
         node.addChild(e1);
         node.addChild(e2);
@@ -169,26 +163,16 @@ E ::= LET D:d IN E:e
     :}
     | STARTBR E:e ENDBR
     {:
-    System.out.println("(E)");
         Node node = new InBrNode();
         node.addChild(e);
         RESULT = node;
     :}
     | CONST:c
     {:
-    System.out.println("CONST");
         RESULT = new ConstNode(c);
     :}
-/*    | BIN:bin
-    {:
-    System.out.println("BIN");
-        //RESULT = new BinNode(bin.value);
-        RESULT = new BinNode(bin);
-    :}
-    */
     | ID:id ASSIGN E:e
     {:
-    System.out.println("ASSIGN");
         Node node = new SetNode();
         node.addChild(new IdentifierNode(id));
         node.addChild(e);
@@ -196,7 +180,6 @@ E ::= LET D:d IN E:e
     :}
     | E:e1 SEMI E:e2
     {:
-    System.out.println("SEMI");
         Node node = new SemiNode();
         node.addChild(e1);
         node.addChild(e2);
@@ -204,7 +187,6 @@ E ::= LET D:d IN E:e
     :}
     | IF EXP:exp THEN E:e1 ELSE E:e2
     {:
-        System.out.println("IF");
         Node node = new IfNode();
         node.addChild(exp);
         node.addChild(e1);
@@ -213,7 +195,6 @@ E ::= LET D:d IN E:e
     :}
     | WHILE EXP:exp DO STARTCB E:e1 ENDCB
     {:
-    System.out.println("WHILE");
         Node node = new WhileNode();
         node.addChild(exp);
         node.addChild(e1);
@@ -229,25 +210,14 @@ EXP ::= TRUE
     {:
         RESULT = new ConstNode(0);
     :}
-  /*  |
-    STARTBR EXP:exp ENDBR
-    {:
-    System.out.println("(true/false)");
-        Node node = new InBrNode();
-       // node.addChild(new BinNode(bin.value));
-        node.addChild(new BinNode(exp));
-        RESULT = node;
-    :} */
     | STARTBR EXP:exp ENDBR
     {:
-    System.out.println("(C)");
         Node node = new InBrNode();
         node.addChild(exp);
         RESULT = node;
     :}
     | E:e1 EQEQ E:e2
     {:
-    System.out.println("E == E");
         Node node = new OpNode("==");
         node.addChild(e1);
         node.addChild(e2);
@@ -255,7 +225,6 @@ EXP ::= TRUE
     :}
     | E:e1 NEQ E:e2
     {:
-    System.out.println("E != E");
         Node node = new OpNode("!=");
         node.addChild(e1);
         node.addChild(e2);
@@ -263,7 +232,6 @@ EXP ::= TRUE
     :}
     | E:e1 LT E:e2
     {:
-    System.out.println("E < E");
         Node node = new OpNode("<");
         node.addChild(e1);
         node.addChild(e2);
@@ -271,7 +239,6 @@ EXP ::= TRUE
     :}
     | E:e1 GT E:e2
     {:
-    System.out.println("E > E");
         Node node = new OpNode(">");
         node.addChild(e1);
         node.addChild(e2);
@@ -279,7 +246,6 @@ EXP ::= TRUE
     :}
     | E:e1 GOE E:e2
     {:
-    System.out.println("E >= E");
         Node node = new OpNode(">=");
         node.addChild(e1);
         node.addChild(e2);
@@ -287,7 +253,6 @@ EXP ::= TRUE
     :}
     | E:e1 LOE E:e2
     {:
-    System.out.println("E <= E");
         Node node = new OpNode("<=");
         node.addChild(e1);
         node.addChild(e2);
@@ -295,7 +260,6 @@ EXP ::= TRUE
     :}
     | EXP:exp1 EQEQ EXP:exp2
     {:
-    System.out.println("C == C");
         Node node = new OpNode("==");
         node.addChild(exp1);
         node.addChild(exp2);
@@ -303,7 +267,6 @@ EXP ::= TRUE
     :}
     | EXP:exp1 NEQ EXP:exp2
     {:
-    System.out.println("C != C");
         Node node = new OpNode("!=");
         node.addChild(exp1);
         node.addChild(exp2);
@@ -311,7 +274,6 @@ EXP ::= TRUE
     :}
     | EXP:exp1 AND EXP:exp2
     {:
-    System.out.println("C AND C");
         Node node = new OpNode("&&");
         node.addChild(exp1);
         node.addChild(exp2);
@@ -319,7 +281,6 @@ EXP ::= TRUE
     :}
     | EXP:exp1 OR EXP:exp2
     {:
-    System.out.println("C OR C");
         Node node = new OpNode("||");
         node.addChild(exp1);
         node.addChild(exp2);
@@ -329,12 +290,10 @@ EXP ::= TRUE
 
 A ::= E:e1
     {:
-    System.out.println("A");
         RESULT = e1;
     :}
     | A:a1 COMMA E:e1
     {:
-    System.out.println("A COMMA");
         Node node = new CommaNode();
         node.addChild(a1);
         node.addChild(e1);
@@ -344,7 +303,6 @@ A ::= E:e1
 
 D ::= ID:id STARTBR V:v ENDBR STARTCB E:e ENDCB
     {:
-    System.out.println("DEF");
         Node node = new DefinitionNode();
         node.addChild(new IdentifierNode(id));
         node.addChild(v);
@@ -353,7 +311,6 @@ D ::= ID:id STARTBR V:v ENDBR STARTCB E:e ENDCB
     :}
     | D:d1 D:d2
     {:
-    System.out.println("D D");
         Node node = new DefDefNode();
         node.addChild(d1);
         node.addChild(d2);
@@ -363,13 +320,11 @@ D ::= ID:id STARTBR V:v ENDBR STARTCB E:e ENDCB
 
 V ::= ID:id
     {:
-    System.out.println("V");
         Node node = new IdentifierNode(id);
         RESULT = node;
     :}
     | V:v1 COMMA V:v2
     {:
-    System.out.println("V, V");
         Node node = new CommaNode();
         node.addChild(v1);
         node.addChild(v2);

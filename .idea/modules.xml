@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/tripla/tripla.iml" filepath="$PROJECT_DIR$/tripla/tripla.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/tram.iml" filepath="$PROJECT_DIR$/.idea/modules/tram.iml" />
     </modules>
   </component>
 </project>
