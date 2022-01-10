@@ -1,6 +1,6 @@
 package de.unitrier.st.uap.nodes;
 
-import de.unitrier.st.uap.Instruction;
+import de.unitrier.st.uap.w21.tram.Instruction;
 import de.unitrier.st.uap.tramgeneration.AddressRoom;
 import de.unitrier.st.uap.tramgeneration.CodeLine;
 import de.unitrier.st.uap.tramgeneration.TramLabel;

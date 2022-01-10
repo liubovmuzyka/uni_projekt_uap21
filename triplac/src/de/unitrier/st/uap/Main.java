@@ -3,6 +3,7 @@ package de.unitrier.st.uap;
 import de.unitrier.st.uap.nodes.Node;
 import de.unitrier.st.uap.tramgeneration.AddressRoom;
 import de.unitrier.st.uap.tramgeneration.CodeLine;
+import de.unitrier.st.uap.w21.tram.Instruction;
 
 import java.io.*;
 import java.util.ArrayList;
@@ -36,7 +37,7 @@ final class Main
             code.add(new CodeLine(Instruction.HALT));
             String program = code.stream().map(e -> e.toInstruction(code).toString()).collect(Collectors.joining(System.getProperty("line.separator")));
             try {
-                FileWriter myWriter = new FileWriter("coderesult.tram");
+                FileWriter myWriter = new FileWriter("../tram/coderesult.tram");
                 myWriter.write(program);
                 myWriter.close();
             } catch (IOException e) {
@@ -78,7 +79,7 @@ final class Main
 
     public static void createDot(Node root) {
         try {
-            try (BufferedWriter writer = new BufferedWriter(new FileWriter("C:\\Users\\Liubov\\GitHub\\uni_projekt_uap21\\triplac\\resultast.dot", false))) {
+            try (BufferedWriter writer = new BufferedWriter(new FileWriter("resultast.dot", false))) {
                 writer.append("strict digraph graphname\n{");
                 visit1(root, writer);
                 visit2(root, "", writer);

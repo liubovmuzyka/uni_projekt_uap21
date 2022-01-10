@@ -5,45 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="60b59962-7688-43cc-9637-3fecadaeb48c" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gradle/6.7/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.7/executionHistory/executionHistory.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/6.7/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.7/executionHistory/executionHistory.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/6.7/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.7/fileHashes/fileHashes.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/6.7/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.7/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/6.7/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.7/javaCompile/classAnalysis.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/6.7/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.7/javaCompile/javaCompile.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/checksums/checksums.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/checksums/md5-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/checksums/md5-checksums.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/checksums/sha1-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/checksums/sha1-checksums.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/de/unitrier/st/uap/w21/tram/AbstractMachine.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/de/unitrier/st/uap/w21/tram/AbstractMachine.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/de/unitrier/st/uap/w21/tram/Instruction.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/de/unitrier/st/uap/w21/tram/Instruction.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/de/unitrier/st/uap/w21/tram/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/de/unitrier/st/uap/w21/tram/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/source-classes-mapping.txt" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/compileJava/source-classes-mapping.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/debug-modus.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ggt.tram" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/de/unitrier/st/uap/w21/tram/AbstractMachine.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/unitrier/st/uap/w21/tram/AbstractMachine.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/de/unitrier/st/uap/w21/tram/Instruction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/unitrier/st/uap/w21/tram/Instruction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/de/unitrier/st/uap/w21/tram/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/unitrier/st/uap/w21/tram/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/triplac/.gradle/7.2/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/triplac/.gradle/7.2/executionHistory/executionHistory.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/triplac/.gradle/7.2/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/triplac/.gradle/7.2/executionHistory/executionHistory.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/triplac/.gradle/7.2/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/triplac/.gradle/7.2/fileHashes/fileHashes.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/triplac/.gradle/7.2/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/triplac/.gradle/7.2/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/triplac/.gradle/7.2/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/triplac/.gradle/7.2/fileHashes/resourceHashesCache.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/triplac/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/triplac/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/triplac/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/triplac/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/triplac/build/classes/java/main/de/unitrier/st/uap/Instruction.class" beforeDir="false" afterPath="$PROJECT_DIR$/triplac/build/classes/java/main/de/unitrier/st/uap/Instruction.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/triplac/build/classes/java/main/de/unitrier/st/uap/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/triplac/build/classes/java/main/de/unitrier/st/uap/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/triplac/build/classes/java/main/de/unitrier/st/uap/nodes/OpNode.class" beforeDir="false" afterPath="$PROJECT_DIR$/triplac/build/classes/java/main/de/unitrier/st/uap/nodes/OpNode.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/triplac/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/triplac/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/triplac/example.png" beforeDir="false" afterPath="$PROJECT_DIR$/triplac/example.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/triplac/result.dot" beforeDir="false" afterPath="$PROJECT_DIR$/triplac/result.dot" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/triplac/src/de/unitrier/st/uap/Instruction.java" beforeDir="false" afterPath="$PROJECT_DIR$/triplac/src/de/unitrier/st/uap/Instruction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/settings.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/triplac/src/de/unitrier/st/uap/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/triplac/src/de/unitrier/st/uap/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/triplac/src/de/unitrier/st/uap/nodes/OpNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/triplac/src/de/unitrier/st/uap/nodes/OpNode.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/triplac/while-ast.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/triplac/while.tram" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/triplac/while.tripla" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -330,7 +294,7 @@
       <workItem from="1641593171987" duration="19866000" />
       <workItem from="1641745249713" duration="310000" />
       <workItem from="1641745568291" duration="4905000" />
-      <workItem from="1641753632433" duration="17263000" />
+      <workItem from="1641753632433" duration="19811000" />
     </task>
     <servers />
   </component>

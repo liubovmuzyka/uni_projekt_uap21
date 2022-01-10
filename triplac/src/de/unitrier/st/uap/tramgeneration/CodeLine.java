@@ -1,6 +1,6 @@
 package de.unitrier.st.uap.tramgeneration;
 
-import de.unitrier.st.uap.Instruction;
+import de.unitrier.st.uap.w21.tram.Instruction;
 
 import java.util.ArrayList;
 import java.util.List;

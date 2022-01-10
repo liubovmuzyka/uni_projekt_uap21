@@ -1,2 +1,3 @@
 rootProject.name = 'triplac'
-
+include ':tram'
+project(':tram').projectDir = new File(settingsDir, '../tram')
